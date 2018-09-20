@@ -1,0 +1,17 @@
+/**app.wxss**/
+@import './assets/iconfont/iconfont.wxss';
+
+view {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0;
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #333;
+}

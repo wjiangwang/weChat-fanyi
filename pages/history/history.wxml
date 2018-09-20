@@ -1,0 +1,9 @@
+<view class='container'>
+  <text class='title'>翻译历史</text>
+  <view class='historyList' wx:for='{{history}}' wx:key='index' wx:for-item='historyItem' bindtap='onTap' data-src='{{historyItem.src}}' data-languageIndex='{{historyItem.languageIndex}}'>
+    <view class='text-wrap'>
+      <text class='src'>{{historyItem.src}}</text>
+      <text class='dst'>{{historyItem.dst}}</text>
+    </view>
+  </view>
+</view>

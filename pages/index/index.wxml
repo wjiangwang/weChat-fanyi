@@ -1,0 +1,29 @@
+<view class='container'>
+  <view class='change'>
+    <navigator url='/pages/change/change'>
+      <text>翻译至{{currentLanguage.chs}}</text>
+      <text class="iconfont icon-down"></text>
+    </navigator>
+  </view>
+
+
+  <view class='input-area'>
+    <view class='textarea-wrap'>
+      <textarea bindinput='onInput' bindblur='onConfirm' placeholder='请输入要翻译的文本' value="{{query}}"></textarea>
+      <text hidden='{{hideClearIcon}}' bindtap='onTapClose' class='iconfont  icon-close2'></text>
+    </view>
+  </view>
+
+
+  <view class='text-title'>
+    <text>译文</text>
+
+  </view>
+
+
+  <view class='translation-area'>
+    <view wx:for='{{result}}' wx:key='index'>
+      <text selectable="true">{{item.dst}}</text>
+    </view>
+  </view>
+</view>

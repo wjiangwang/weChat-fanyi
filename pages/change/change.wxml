@@ -1,0 +1,9 @@
+<view class='container'>
+  <text class='title'>翻译至</text>
+  <view class='languageList' wx:for='{{languageList}}' wx:key='index' wx:for-item="language" data-chs='{{language.chs}}' data-en='{{language.en}}' data-index='{{index}}' bindtap='onTap'>
+    <view class='text-wrap'>
+      <text class='chs'>{{language.chs}}</text>
+      <text class='iconfont .icon-duihao' wx:if='{{currentLanguage.index===index}}'></text>
+    </view>
+  </view>
+</view>

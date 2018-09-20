@@ -1,0 +1,25 @@
+.title {
+  border-bottom: 1px solid #ececec;
+  padding: 20rpx 40rpx;
+  color: #aaa;
+  font-size: 28rpx;
+}
+
+.historyList {
+  padding-left: 40rpx;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ececec;
+  padding: 20rpx 40rpx 20rpx 0;
+}
+
+.text-wrap .src {
+  color: #8995a1;
+}
+
+.text-wrap .dst {
+  margin-top: 16rpx;
+}
